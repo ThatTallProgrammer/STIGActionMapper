@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?>
+<Benchmark xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="http://checklists.nist.gov/xccdf/1.1" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" id="Application_Security_Development_STIG" xml:lang="en">
+  <status date="2020-09-30">accepted</status>
+  <title>Application Security and Development Security Technical Implementation Guide</title>
+  <description>This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description>
+  <notice id="terms-of-use" xml:lang="en"/>
+  <front-matter xml:lang="en"/>
+  <rear-matter xml:lang="en"/>
+  <reference href="https://cyber.mil">
+    <dc:publisher>DISA</dc:publisher>
+    <dc:source>STIG.DOD.MIL</dc:source>
+  </reference>
+  <plain-text id="release-info">Release: 1 Benchmark Date: 23 Oct 2020</plain-text>
+  <plain-text id="generator">3.1.1.36225</plain-text>
+  <plain-text id="conventionsVersion">1.10.0</plain-text>
+  <version>5</version>
+  <Profile id="MAC-1_Classified">
+    <title>I - Mission Critical Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-1_Public">
+    <title>I - Mission Critical Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-1_Sensitive">
+    <title>I - Mission Critical Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-2_Classified">
+    <title>II - Mission Support Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-2_Public">
+    <title>II - Mission Support Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-2_Sensitive">
+    <title>II - Mission Support Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-3_Classified">
+    <title>III - Administrative Classified</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-3_Public">
+    <title>III - Administrative Public</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Profile id="MAC-3_Sensitive">
+    <title>III - Administrative Sensitive</title>
+    <description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description>
+    <select idref="V-222387" selected="true"/>
+    <select idref="V-222388" selected="true"/>
+  </Profile>
+  <Group id="V-222387">
+    <title>SRG-APP-000001</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-222387r508029_rule" weight="10.0" severity="medium">
+      <version>APSC-DV-000010</version>
+      <title>The application must provide a capability to limit the number of logon sessions per user.</title>
+      <description>&lt;VulnDiscussion&gt;Application management includes the ability to control the number of users and user sessions that utilize an application. Limiting the number of allowed users and sessions per user is helpful in limiting risks related to DoS attacks.
+
+This requirement may be met via the application or by utilizing information system session control provided by a web server or other underlying solution that provides specialized session management capabilities.
+
+If it has been specified that this requirement will be handled by the application, the capability to limit the maximum number of concurrent single user sessions must be designed and built into the application.
+
+This requirement addresses concurrent sessions for individual system accounts and does not address concurrent sessions by single users via multiple system accounts.
+
+The maximum number of concurrent sessions should be defined based upon mission needs and the operational environment for each system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Application Security and Development</dc:title>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Application Security and Development</dc:subject>
+        <dc:identifier>4093</dc:identifier>
+      </reference>
+      <ident system="http://cyber.mil/legacy">V-69239</ident>
+      <ident system="http://cyber.mil/legacy">SV-83861</ident>
+      <ident system="http://cyber.mil/cci">CCI-000054</ident>
+      <fixtext fixref="F-24046r493070_fix">Design and configure the application to specify the number of logon sessions that are allowed per user.</fixtext>
+      <fix id="F-24046r493070_fix"/>
+      <check system="C-24057r493069_chk">
+        <check-content-ref href="Application_Security_and_Development_STIG.xml" name="M"/>
+        <check-content>For production environments;  Review the system documentation, identify the number of application user logon sessions allowed per user, identify the methods utilized for user session management or have application administrator describe how the application implements user session management.
+
+Utilize the management interface that is used to set the user session values, or examine configuration files in order to review user session configuration settings.
+
+Ensure the number of sessions allowed per user is specified in accordance with the organizational requirements.
+
+For development environments;  have the developer provide design documentation or demonstrate how the application is designed to limit the number of simultaneous user logon sessions.
+
+If the application is not configured to limit the number of logon sessions per user as defined by the organization, this is a finding.</check-content>
+      </check>
+    </Rule>
+  </Group>
+  <Group id="V-222388">
+    <title>SRG-APP-000295</title>
+    <description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description>
+    <Rule id="SV-222388r508029_rule" weight="10.0" severity="medium">
+      <version>APSC-DV-000060</version>
+      <title>The application must clear temporary storage and cookies when the session is terminated.</title>
+      <description>&lt;VulnDiscussion&gt;Persistent cookies are a primary means by which a web application will store application state and user information.  Since HTTP is a stateless protocol, this persistence allows the web application developer to provide a robust and customizable user experience.
+
+However, if a web application stores user authentication information within a persistent cookie or other temporary storage mechanism, this information can be stolen and used to compromise the users account.
+
+Likewise, HTML 5 provides the developer with a client storage capability where application data larger than the 4K cookie size limit can be stored on the local client.  While this can be beneficial to the developer, this is considered insecure storage and should not be used for storing sensitive session or security tokens.  A cross site scripting attack can put this data at risk.
+
+Web applications must clear sensitive data from files and storage areas on the client when the session is terminated.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description>
+      <reference>
+        <dc:title>DPMS Target Application Security and Development</dc:title>
+        <dc:publisher>DISA</dc:publisher>
+        <dc:type>DPMS Target</dc:type>
+        <dc:subject>Application Security and Development</dc:subject>
+        <dc:identifier>4093</dc:identifier>
+      </reference>
+      <ident system="http://cyber.mil/legacy">SV-83863</ident>
+      <ident system="http://cyber.mil/legacy">V-69241</ident>
+      <ident system="http://cyber.mil/cci">CCI-002361</ident>
+      <fixtext fixref="F-24047r493073_fix">Design and configure the application to clear sensitive data from cookies and local storage when the user logs out of the application.</fixtext>
+      <fix id="F-24047r493073_fix"/>
+      <check system="C-24058r493072_chk">
+        <check-content-ref href="Application_Security_and_Development_STIG.xml" name="M"/>
+        <check-content>Review application design documentation and interview application administrator to identify how the application makes use of temporary client storage and cookies.  Identify cookie and web storage locations on the client.  Clear all browser cookies and web cache.
+
+Log on to the application and perform several standard operations, noting if the application ever prompts the user to accept a cookie. If prompted by the browser to save the user ID and password (decline to save the user ID and password), this is a finding. 
+
+Log out of the application and close the browser. Reopen the browser and examine the stored cookies. The cookies displayed should be related to the application website.
+
+The procedure to view cookies will vary according to the browser used. Some modern browsers are making use of SQLite databases to store cookie data so use of a SQLite db reader/browser may be required.
+
+Open the cookies related to the application website and search for any identification or authentication information. While authentication information can vary on a per application basis, this is most often specified as "username=x", or "password=x".
+
+If the web application prompts the user to save their password, or if a username or password value exists within a cookie or within local storage locations, even if hashed, this is a finding.
+
+The application may use means other than cookies to store user information. If the reviewer detects an alternative mechanism for storing information locally, examine the data storage to ensure no authentication or other sensitive information is present.</check-content>
+      </check>
+    </Rule>
+  </Group>
+</Benchmark>
